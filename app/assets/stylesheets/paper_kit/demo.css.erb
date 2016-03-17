@@ -1,3 +1,9 @@
+/*!
+ * Let Rails know that this file will need to recompile whenever the dependency is updated.
+ * http://blog.backupify.com/2014/07/29/client-side-templates-rails-way-part-2/
+ */
+//= depend_on_asset "paper_kit/red.jpg"
+
 .tim-row{
     margin-bottom: 20px;
 }
@@ -70,7 +76,7 @@
 
 }
 .navigation-example{
-    background-image: url('../paper_img/red.jpg');
+    background-image: url('<%= image_path("paper_kit/red.jpg") %>');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -225,7 +231,7 @@
     min-height: 600px;
 }
 .demo-header-image{
-    background-image: url('../paper_img/city.jpg');
+    background-image: url('<%= image_path("paper_kit/city.jpg") %>');
 }
 .demo-header .motto{
     color: #FFFFFF;

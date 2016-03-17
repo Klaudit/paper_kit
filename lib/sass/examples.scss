@@ -1,3 +1,6 @@
+//= depend_on_asset "paper_kit/landscape.jpg"
+//= depend_on_asset "paper_kit/lamp.jpg"
+
 .landing-alert{
     margin-bottom: 0;
 }
@@ -44,7 +47,7 @@
     color: #FFF;
 }
 .register-background{
-    background-image: url('../paper_img/landscape.jpg');
+    background-image: url(image-path("paper_kit/landscape.jpg"));
     background-position: center center;
     background-size: cover;
     min-height: 100vh;
@@ -102,7 +105,7 @@
 }
 
 .profile-background{
-    background-image: url('../paper_img/lamp.jpg');
+    background-image: url(image-path("paper_kit/lamp.jpg"));
     background-position: center center;
     background-size: cover;
     height: 300px;

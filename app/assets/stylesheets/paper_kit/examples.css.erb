@@ -1,3 +1,10 @@
+/*!
+ * Let Rails know that this file will need to recompile whenever the dependency is updated.
+ * http://blog.backupify.com/2014/07/29/client-side-templates-rails-way-part-2/
+ */
+//= depend_on_asset "paper_kit/landscape.jpg"
+//= depend_on_asset "paper_kit/lamp.jpg"
+
 .landing-alert {
   margin-bottom: 0;
 }
@@ -55,7 +62,7 @@
 }
 
 .register-background {
-  background-image: url("../paper_img/landscape.jpg");
+  background-image: url('<%= image_path("paper_kit/landscape.jpg") %>');
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
@@ -122,7 +129,7 @@
 }
 
 .profile-background {
-  background-image: url("../paper_img/lamp.jpg");
+  background-image: url('<%= image_path("paper_kit/lamp.jpg") %>');
   background-position: center center;
   background-size: cover;
   height: 300px;
