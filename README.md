@@ -37,7 +37,7 @@ If you want to integrate existing rails app, please make sure you have remove al
 2. Install paper_kit gem
 
   ```
-  gem 'paper_kit', '>= 1.0.0.0'
+  gem 'paper_kit', '~> 1.2', '>= 1.2.1'
   ```
 
   Run the following command to install the gem:
